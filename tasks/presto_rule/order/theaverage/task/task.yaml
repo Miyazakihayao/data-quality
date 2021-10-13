@@ -1,0 +1,7 @@
+task_name: test_task
+transform:
+   - step: presto.Actuator
+     rule: template_rules.Theaverage
+     db: qualitis
+     target:
+       table: rule.qualitis_task_result.mysql

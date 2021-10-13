@@ -1,0 +1,50 @@
+2021-08-24 15:07:41,897,pid=15478,tid=4566355392,werkzeug,INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-24 15:08:21,655,pid=15488,tid=4632137152,werkzeug,INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-24 15:09:01,424,pid=15517,tid=4684029376,werkzeug,INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-24 15:10:12,621,pid=15541,INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-24 15:10:20,790,pid=15541,INFO:before_request() called.
+2021-08-24 15:10:20,791,pid=15541,INFO:Query DB to get rule log.
+2021-08-24 15:10:26,450,pid=15551,INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-24 15:10:35,697,pid=15551,INFO:before_request() called.
+2021-08-24 15:10:35,697,pid=15551,INFO:Query DB to get rule log.
+2021-08-24 15:10:35,731,pid=15551,INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+2021-08-24 15:10:35,771,pid=15551,INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+2021-08-24 15:10:35,774,pid=15551,INFO:after_request() called.
+2021-08-24 15:10:35,775,pid=15551,INFO:127.0.0.1 - - [24/Aug/2021 15:10:35] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+2021-08-24 15:11:23,267,pid=15551,INFO:before_request() called.
+2021-08-24 15:11:23,267,pid=15551,INFO:Query DB to get rule log.
+2021-08-24 15:11:23,269,pid=15551,INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+2021-08-24 15:11:23,300,pid=15551,INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+2021-08-24 15:11:23,304,pid=15551,INFO:after_request() called.
+2021-08-24 15:11:23,304,pid=15551,INFO:127.0.0.1 - - [24/Aug/2021 15:11:23] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+2021-08-24 15:11:23,638,pid=15551,INFO:before_request() called.
+2021-08-24 15:11:23,638,pid=15551,INFO:Query DB to get rule log.
+2021-08-24 15:11:23,641,pid=15551,INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+2021-08-24 15:11:23,672,pid=15551,INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+2021-08-24 15:11:23,675,pid=15551,INFO:after_request() called.
+2021-08-24 15:11:23,676,pid=15551,INFO:127.0.0.1 - - [24/Aug/2021 15:11:23] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+15:12:48,pid=15578,INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:12:51,pid=15578,INFO:before_request() called.
+15:12:51,pid=15578,INFO:Query DB to get rule log.
+15:12:52,pid=15578,INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:12:52,pid=15578,INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+15:12:52,pid=15578,INFO:after_request() called.
+15:12:52,pid=15578,INFO:127.0.0.1 - - [24/Aug/2021 15:12:52] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+15:12:52,pid=15578,INFO:before_request() called.
+15:12:52,pid=15578,INFO:Query DB to get rule log.
+15:12:52,pid=15578,INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:12:52,pid=15578,INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+15:12:52,pid=15578,INFO:after_request() called.
+15:12:52,pid=15578,INFO:127.0.0.1 - - [24/Aug/2021 15:12:52] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+15:12:53,pid=15578,INFO:before_request() called.
+15:12:53,pid=15578,INFO:Query DB to get rule log.

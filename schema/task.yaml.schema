@@ -1,0 +1,17 @@
+type: //rec
+required: 
+  target: 
+    type: //map
+    values: 
+      type: //arr
+      contents: //str
+  default_target: //str
+optional:
+  parent: //str
+  exp: //str
+  entry: //str
+rest:
+  type: //map
+  values: 
+    type: //arr
+    contents: //def

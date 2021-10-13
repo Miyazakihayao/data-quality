@@ -1,0 +1,18 @@
+type: //rec
+required: 
+  cluster_name: //str
+  server_list: 
+    type: //arr
+    contents: 
+      type: //rec
+      required: 
+        server_name: //str
+        host: //str
+        user: //str
+        passwd: //str
+        port: //num
+        db: //str
+      optional:
+        type: //str
+optional:
+  other_para: //str

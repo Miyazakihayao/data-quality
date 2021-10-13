@@ -1,0 +1,8 @@
+task_name: test_task
+transform:
+   - step: presto.Actuator
+     rule: custom_rules.Indicators.cus_cnt
+     db: qualitis
+     file: sql/test.sql
+     target:
+       table: rule.qualitis_task_result.mysql

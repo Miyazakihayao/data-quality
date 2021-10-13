@@ -1,0 +1,13 @@
+task_name: test_task
+transform:
+   - step: presto.Actuator
+     rule: template_rules.Numberofrows
+     db: qualitis
+     target:
+       table: rule.qualitis_task_result.mysql
+   - step: alarm.Value
+     rule: template_rules.Numberofrows
+     db: qualitis
+     exp: '>0'
+     source:
+       table: rule.qualitis_task_result.mysql

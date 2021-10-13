@@ -1,0 +1,15 @@
+app_name: rule
+tb_name: qualitis_task_result
+type: mysql
+table_names:
+  - table_name: lineitem
+    filter: 1=1
+    field: discount
+    primarykey: orderkey
+  - table_name: customer
+    filter: 1=1
+    field: acctbal
+    primarykey: custkey
+db: qualitis_mysql
+partition: '%Y%m%d'
+model: ful

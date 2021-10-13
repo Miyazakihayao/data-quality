@@ -1,0 +1,2 @@
+#!/bin/sh
+python $DATAQA_HOME/cores/runner.py $@

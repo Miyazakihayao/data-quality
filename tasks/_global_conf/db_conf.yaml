@@ -1,0 +1,16 @@
+qualitis:
+  host: 127.0.0.1
+  user: root
+  password: 123456
+  port: 8080
+  catalog: tpch
+  database: sf1
+  type: presto
+qualitis_mysql:
+  host: 127.0.0.1
+  user: root
+  password: 123456
+  port: 3307
+  database: qualitis
+  type: mysql
+  charset: utf8

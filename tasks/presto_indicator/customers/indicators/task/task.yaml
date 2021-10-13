@@ -1,0 +1,14 @@
+task_name: test_task
+transform:
+   - step: presto.Actuator
+     rule: custom_rules.Indicators.cus_cnt1
+     db: qualitis
+     file: sql/test.sql
+     target:
+       table: rule.qualitis_task_result.mysql
+   - step: alarm.Value
+     rule: custom_rules.Indicators.cus_cnt1
+     db: qualitis
+     exp: '>0'
+     source:
+       table: rule.qualitis_task_result.mysql

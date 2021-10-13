@@ -1,0 +1,13 @@
+type: //rec
+optional:
+  data_flow_interceptor:
+    type: //arr
+    contents: //str 
+  step_interceptor:
+    type: //arr
+    contents: //str 
+  meta_manager:
+    type: //str
+  phase_list:
+    type: //arr
+    contents: //str

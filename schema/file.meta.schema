@@ -1,0 +1,44 @@
+type: //rec
+required:
+  app_name: //str
+  tb_name: //str
+  type: 
+    type: //one
+    of: [ ftp, local, hdfs, db, hive, rcync]
+  db: //str
+  model:
+    type: //one
+    of: [ ful, inc ]
+optional:
+  table_names:
+    type: //arr
+    contents:
+      type: //rec
+      required:
+        table_name: //str
+        filter: //str
+      optional:
+        field: //str
+        primarykey: //str
+        regexp: //str
+        regname: //str
+        enumvalue: //str
+        db_type: //str
+        db_name: //str
+  duration: //num
+  exinfo: //str
+  comment: //str
+  del_col: //str
+  del_filter: //str
+  encoding: //str
+  md5_path: //str
+  compress: //str
+  password: //str
+  op_model: //str
+  partition: //str
+  format:
+    type: //rec
+    optional:
+      separator: //str
+      prefixoverride: //str
+      suffixoverride: //str

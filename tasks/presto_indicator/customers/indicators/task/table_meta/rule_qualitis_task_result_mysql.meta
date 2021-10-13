@@ -1,0 +1,11 @@
+app_name: rule
+tb_name: qualitis_task_result
+type: mysql
+table_names:
+  - table_name: lineitem
+    filter: 1=1
+    db_type: presto0820
+    db_name: sf10820
+db: qualitis_mysql
+partition: '%Y%m%d'
+model: ful

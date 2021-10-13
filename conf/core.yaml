@@ -1,0 +1,8 @@
+phase_list:
+  - rollback
+  - init
+  - extract
+  - transform
+  - publish
+  - clear
+

@@ -1,0 +1,1077 @@
+15:12:57,pid=15578,INFO:127.0.0.1 - - [24/Aug/2021 15:12:57] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+15:12:57,pid=15578,INFO:before_request() called.
+15:12:57,pid=15578,INFO:Query DB to get rule log.
+15:12:57,pid=15578,INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:12:57,pid=15578,INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+15:12:57,pid=15578,INFO:after_request() called.
+15:12:57,pid=15578,INFO:127.0.0.1 - - [24/Aug/2021 15:12:57] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+15:15:50,pid=15607,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:16:11,pid=15634,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:16:20,pid=15634,web.app，INFO:before_request() called.
+15:16:20,pid=15634,dashboard_rule_log，INFO:Query DB to get rule log.
+15:16:20,pid=15634,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:16:20,pid=15634,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+15:16:20,pid=15634,web.app，INFO:after_request() called.
+15:16:20,pid=15634,werkzeug，INFO:127.0.0.1 - - [24/Aug/2021 15:16:20] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+15:16:25,pid=15634,web.app，INFO:before_request() called.
+15:16:25,pid=15634,dashboard_rule_log，INFO:Query DB to get rule log.
+15:16:25,pid=15634,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:16:25,pid=15634,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto"', 'db_name': 'qualitis_task_result.db_name == "sf1"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "Numberofrows"', 'task_time_begin': 'qualitis_task_result.task_time >= "2020110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2020110211"', 'exp': '1==1'}
+15:16:25,pid=15634,web.app，INFO:after_request() called.
+15:16:25,pid=15634,werkzeug，INFO:127.0.0.1 - - [24/Aug/2021 15:16:25] "[35m[1mGET /api/v1.0/details/Numberofrows?db_type=presto&db_name=sf1&table_name=lineitem&col_name=&rule_name=Numberofrows&task_time_begin=2020110211&task_time_end=2020110211 HTTP/1.1[0m" 201 -
+14:12:59,pid=22125,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:13:03,pid=22125,web.app，INFO:before_request() called.
+14:13:03,pid=22125,dashboard_rule_log，INFO:Query DB to get rule log.
+14:13:03,pid=22125,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:13:04,pid=22125,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 359, in __init__
+    self.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 645, in connect
+    self._request_authentication()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 923, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 738, in _read_packet
+    packet.raise_for_error()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'qualitis_rw'@'172.16.0.193' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/hushuai/PycharmProjects/git/data-quality/data_engine/data_entity.py", line 96, in data_query
+    results = query.all()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2712, in all
+    return self._iter().all()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2850, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1530, in _connection_for_bind
+    engine, execution_options
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3216, in _wrap_pool_connect
+    e, dialect, self
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2070, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 359, in __init__
+    self.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 645, in connect
+    self._request_authentication()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 923, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 738, in _read_packet
+    packet.raise_for_error()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'qualitis_rw'@'172.16.0.193' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 16, in getCheckItemCfg_view
+    cfg = dashboard_rule_log.getruleresults(**dicts)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/cores/model_meta.py", line 14, in getruleresults
+    ruleresults = executeSqlWithLog(**kwarg)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/cores/model_meta.py", line 20, in executeSqlWithLog
+    results = data_query(conn_str, **kwargs)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/data_engine/data_entity.py", line 101, in data_query
+    raise MysqlError("query source table opreate faild!")
+cores.exception.MysqlError: query source table opreate faild!
+14:13:04,pid=22125,web.app，INFO:after_request() called.
+14:13:04,pid=22125,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:13:04] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+14:13:04,pid=22125,web.app，INFO:before_request() called.
+14:13:04,pid=22125,web.app，INFO:after_request() called.
+14:13:04,pid=22125,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:13:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14:13:08,pid=22125,web.app，INFO:before_request() called.
+14:13:08,pid=22125,dashboard_rule_log，INFO:Query DB to get rule log.
+14:13:08,pid=22125,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:13:10,pid=22125,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 359, in __init__
+    self.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 645, in connect
+    self._request_authentication()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 923, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 738, in _read_packet
+    packet.raise_for_error()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'qualitis_rw'@'172.16.0.193' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/hushuai/PycharmProjects/git/data-quality/data_engine/data_entity.py", line 96, in data_query
+    results = query.all()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2712, in all
+    return self._iter().all()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2850, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1530, in _connection_for_bind
+    engine, execution_options
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3216, in _wrap_pool_connect
+    e, dialect, self
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2070, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 359, in __init__
+    self.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 645, in connect
+    self._request_authentication()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 923, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 738, in _read_packet
+    packet.raise_for_error()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'qualitis_rw'@'172.16.0.193' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 16, in getCheckItemCfg_view
+    cfg = dashboard_rule_log.getruleresults(**dicts)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/cores/model_meta.py", line 14, in getruleresults
+    ruleresults = executeSqlWithLog(**kwarg)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/cores/model_meta.py", line 20, in executeSqlWithLog
+    results = data_query(conn_str, **kwargs)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/data_engine/data_entity.py", line 101, in data_query
+    raise MysqlError("query source table opreate faild!")
+cores.exception.MysqlError: query source table opreate faild!
+14:13:10,pid=22125,web.app，INFO:after_request() called.
+14:13:10,pid=22125,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:13:10] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+14:14:01,pid=22156,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:14:08,pid=22156,web.app，INFO:before_request() called.
+14:14:08,pid=22156,dashboard_rule_log，INFO:Query DB to get rule log.
+14:16:03,pid=22156,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:16:13,pid=22156,data_query，INFO:query is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:18:38,pid=22156,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:18:48,pid=22156,web.app，INFO:before_request() called.
+14:18:48,pid=22156,dashboard_rule_log，INFO:Query DB to get rule log.
+14:18:54,pid=22179,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:18:56,pid=22179,web.app，INFO:before_request() called.
+14:18:56,pid=22179,dashboard_rule_log，INFO:Query DB to get rule log.
+14:18:56,pid=22179,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:18:56,pid=22179,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 359, in __init__
+    self.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 645, in connect
+    self._request_authentication()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 923, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 738, in _read_packet
+    packet.raise_for_error()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'qualitis_rw'@'172.16.0.193' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/hushuai/PycharmProjects/git/data-quality/data_engine/data_entity.py", line 96, in data_query
+    results = query.all()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2712, in all
+    return self._iter().all()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 2850, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1530, in _connection_for_bind
+    engine, execution_options
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3216, in _wrap_pool_connect
+    e, dialect, self
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2070, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 359, in __init__
+    self.connect()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 645, in connect
+    self._request_authentication()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 923, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/connections.py", line 738, in _read_packet
+    packet.raise_for_error()
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/venv/lib/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'qualitis_rw'@'172.16.0.193' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 16, in getCheckItemCfg_view
+    cfg = dashboard_rule_log.getruleresults(**dicts)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/cores/model_meta.py", line 14, in getruleresults
+    ruleresults = executeSqlWithLog(**kwarg)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/cores/model_meta.py", line 20, in executeSqlWithLog
+    results = data_query(conn_str, **kwargs)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/data_engine/data_entity.py", line 101, in data_query
+    raise MysqlError("query source table opreate faild!")
+cores.exception.MysqlError: query source table opreate faild!
+14:18:56,pid=22179,web.app，INFO:after_request() called.
+14:18:56,pid=22179,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:18:56] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+14:19:42,pid=22202,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:19:44,pid=22202,web.app，INFO:before_request() called.
+14:19:44,pid=22202,dashboard_rule_log，INFO:Query DB to get rule log.
+14:19:44,pid=22202,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:19:44,pid=22202,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:19:44,pid=22202,web.app，INFO:after_request() called.
+14:19:44,pid=22202,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:19:44] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+14:20:47,pid=22209,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:21:16,pid=22227,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:21:19,pid=22227,web.app，INFO:before_request() called.
+14:21:19,pid=22227,dashboard_rule_log，INFO:Query DB to get rule log.
+14:21:35,pid=22227,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:21:35,pid=22227,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:21:35,pid=22227,web.app，INFO:after_request() called.
+14:21:35,pid=22227,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:21:35] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+14:22:00,pid=22239,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:22:03,pid=22239,web.app，INFO:before_request() called.
+14:22:03,pid=22239,dashboard_rule_log，INFO:Query DB to get rule log.
+14:22:07,pid=22239,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:22:07,pid=22239,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:29:42,pid=22339,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:29:59,pid=22362,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:30:05,pid=22362,web.app，INFO:before_request() called.
+14:30:05,pid=22362,dashboard_rule_log，INFO:Query DB to get rule log.
+14:30:05,pid=22362,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:30:05,pid=22362,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:30:05,pid=22362,web.app，INFO:after_request() called.
+14:30:05,pid=22362,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:30:05] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+14:32:24,pid=22424,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:32:29,pid=22424,web.app，INFO:before_request() called.
+14:32:29,pid=22424,dashboard_rule_log，INFO:Query DB to get rule log.
+14:32:29,pid=22424,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:32:29,pid=22424,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:32:29,pid=22424,web.app，INFO:after_request() called.
+14:32:29,pid=22424,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:32:29] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+14:42:21,pid=22573,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:42:24,pid=22573,web.app，INFO:before_request() called.
+14:42:24,pid=22573,dashboard_rule_log，INFO:Query DB to get rule log.
+14:42:24,pid=22573,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:42:24,pid=22573,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:42:24,pid=22573,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 33, in getCheckItemCfg_view
+    print(json.dump(dic))
+TypeError: dump() missing 1 required positional argument: 'fp'
+14:42:24,pid=22573,web.app，INFO:after_request() called.
+14:42:24,pid=22573,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:42:24] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+14:44:15,pid=22610,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:44:17,pid=22610,web.app，INFO:before_request() called.
+14:44:17,pid=22610,dashboard_rule_log，INFO:Query DB to get rule log.
+14:44:18,pid=22610,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:44:18,pid=22610,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:44:18,pid=22610,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 33, in getCheckItemCfg_view
+    print(json.dump(details))
+TypeError: dump() missing 1 required positional argument: 'fp'
+14:44:18,pid=22610,web.app，INFO:after_request() called.
+14:44:18,pid=22610,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:44:18] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+14:45:55,pid=22625,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:46:00,pid=22625,web.app，INFO:before_request() called.
+14:46:00,pid=22625,dashboard_rule_log，INFO:Query DB to get rule log.
+14:46:04,pid=22625,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:46:04,pid=22625,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:49:33,pid=22687,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:49:35,pid=22687,web.app，INFO:before_request() called.
+14:49:35,pid=22687,dashboard_rule_log，INFO:Query DB to get rule log.
+14:49:35,pid=22687,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:49:35,pid=22687,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:49:35,pid=22687,web.app，INFO:after_request() called.
+14:49:35,pid=22687,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:49:35] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+14:49:37,pid=22687,web.app，INFO:before_request() called.
+14:49:37,pid=22687,dashboard_rule_log，INFO:Query DB to get rule log.
+14:49:37,pid=22687,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:49:37,pid=22687,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:49:37,pid=22687,web.app，INFO:after_request() called.
+14:49:37,pid=22687,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:49:37] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+14:52:05,pid=22712,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:52:11,pid=22712,web.app，INFO:before_request() called.
+14:52:11,pid=22712,dashboard_rule_log，INFO:Query DB to get rule log.
+14:52:11,pid=22712,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:52:12,pid=22712,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:52:12,pid=22712,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 31, in getCheckItemCfg_view
+    print(jsonify({'results': details}))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 348, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 56, in default
+    return super().default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Decimal' is not JSON serializable
+14:52:12,pid=22712,web.app，INFO:after_request() called.
+14:52:12,pid=22712,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:52:12] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+14:54:10,pid=22741,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:54:13,pid=22741,web.app，INFO:before_request() called.
+14:54:13,pid=22741,dashboard_rule_log，INFO:Query DB to get rule log.
+14:54:13,pid=22741,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:54:13,pid=22741,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:54:13,pid=22741,web.app，INFO:after_request() called.
+14:54:13,pid=22741,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:54:13] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+14:55:01,pid=22751,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+14:55:19,pid=22751,web.app，INFO:before_request() called.
+14:55:19,pid=22751,dashboard_rule_log，INFO:Query DB to get rule log.
+14:55:19,pid=22751,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+14:55:19,pid=22751,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+14:55:19,pid=22751,web.app，INFO:after_request() called.
+14:55:19,pid=22751,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 14:55:19] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+15:02:53,pid=22751,web.app，INFO:before_request() called.
+15:02:53,pid=22751,dashboard_rule_log，INFO:Query DB to get rule log.
+15:02:53,pid=22751,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:02:53,pid=22751,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:02:53,pid=22751,web.app，INFO:after_request() called.
+15:02:53,pid=22751,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:02:53] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+15:03:19,pid=22866,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:03:21,pid=22866,web.app，INFO:before_request() called.
+15:03:21,pid=22866,dashboard_rule_log，INFO:Query DB to get rule log.
+15:03:21,pid=22866,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:03:21,pid=22866,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:03:21,pid=22866,web.app，INFO:after_request() called.
+15:03:21,pid=22866,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:03:21] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+15:03:52,pid=22879,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:03:54,pid=22879,web.app，INFO:before_request() called.
+15:03:54,pid=22879,dashboard_rule_log，INFO:Query DB to get rule log.
+15:03:54,pid=22879,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:03:54,pid=22879,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:03:54,pid=22879,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 28, in getCheckItemCfg_view
+    'details': object(row.details)
+TypeError: object() takes no parameters
+15:03:54,pid=22879,web.app，INFO:after_request() called.
+15:03:54,pid=22879,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:03:54] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+15:04:19,pid=22889,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:04:22,pid=22889,web.app，INFO:before_request() called.
+15:04:22,pid=22889,dashboard_rule_log，INFO:Query DB to get rule log.
+15:04:22,pid=22889,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:04:22,pid=22889,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:04:22,pid=22889,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 31, in getCheckItemCfg_view
+    print(jsonify({'results': details}))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 348, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 56, in default
+    return super().default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Decimal' is not JSON serializable
+15:04:22,pid=22889,web.app，INFO:after_request() called.
+15:04:22,pid=22889,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:04:22] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+15:06:24,pid=22912,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:06:29,pid=22912,web.app，INFO:before_request() called.
+15:06:29,pid=22912,dashboard_rule_log，INFO:Query DB to get rule log.
+15:06:29,pid=22912,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:06:29,pid=22912,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:06:29,pid=22912,web.app，INFO:after_request() called.
+15:06:29,pid=22912,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:06:29] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+15:10:47,pid=22969,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:11:00,pid=22969,web.app，INFO:before_request() called.
+15:11:00,pid=22969,dashboard_rule_log，INFO:Query DB to get rule log.
+15:11:00,pid=22969,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:11:00,pid=22969,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:11:00,pid=22969,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 31, in getCheckItemCfg_view
+    print(jsonify({'results': details}))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 348, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 56, in default
+    return super().default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'qualitis_task_result' is not JSON serializable
+15:11:00,pid=22969,web.app，INFO:after_request() called.
+15:11:00,pid=22969,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:11:00] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+15:20:26,pid=23068,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:20:32,pid=23068,web.app，INFO:before_request() called.
+15:20:32,pid=23068,dashboard_rule_log，INFO:Query DB to get rule log.
+15:20:37,pid=23068,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:20:37,pid=23068,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:20:41,pid=23068,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 31, in getCheckItemCfg_view
+    print(jsonify({'results': details}))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 348, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/json/__init__.py", line 56, in default
+    return super().default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'qualitis_task_result' is not JSON serializable
+15:20:41,pid=23068,web.app，INFO:after_request() called.
+15:20:41,pid=23068,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:20:41] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+15:21:49,pid=23096,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:22:01,pid=23096,web.app，INFO:before_request() called.
+15:22:01,pid=23096,dashboard_rule_log，INFO:Query DB to get rule log.
+15:22:04,pid=23096,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:22:04,pid=23096,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:23:15,pid=23096,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 33, in getCheckItemCfg_view
+    print(json.dumps(details))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'qualitis_task_result' is not JSON serializable
+15:23:15,pid=23096,web.app，INFO:after_request() called.
+15:23:15,pid=23096,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:23:15] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+15:23:26,pid=23129,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:23:29,pid=23129,web.app，INFO:before_request() called.
+15:23:29,pid=23129,dashboard_rule_log，INFO:Query DB to get rule log.
+15:23:36,pid=23129,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:23:36,pid=23129,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:32:57,pid=23245,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:33:03,pid=23245,web.app，INFO:before_request() called.
+15:33:03,pid=23245,dashboard_rule_log，INFO:Query DB to get rule log.
+15:33:09,pid=23245,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:33:09,pid=23245,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:35:04,pid=23285,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:35:15,pid=23285,web.app，INFO:before_request() called.
+15:35:15,pid=23285,dashboard_rule_log，INFO:Query DB to get rule log.
+15:35:21,pid=23285,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:35:21,pid=23285,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:57:13,pid=23551,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:57:16,pid=23551,web.app，INFO:before_request() called.
+15:57:16,pid=23551,dashboard_rule_log，INFO:Query DB to get rule log.
+15:57:21,pid=23551,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:57:21,pid=23551,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:59:14,pid=23610,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:59:17,pid=23610,web.app，INFO:before_request() called.
+15:59:17,pid=23610,dashboard_rule_log，INFO:Query DB to get rule log.
+15:59:17,pid=23610,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+15:59:17,pid=23610,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+15:59:17,pid=23610,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 36, in getCheckItemCfg_view
+    return json.dumps(details), 201
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'StrWrapper' is not JSON serializable
+15:59:17,pid=23610,web.app，INFO:after_request() called.
+15:59:17,pid=23610,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 15:59:17] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+16:00:10,pid=23621,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:00:13,pid=23621,web.app，INFO:before_request() called.
+16:00:13,pid=23621,dashboard_rule_log，INFO:Query DB to get rule log.
+16:00:13,pid=23621,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:00:13,pid=23621,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:00:13,pid=23621,web.app，INFO:after_request() called.
+16:00:13,pid=23621,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 16:00:13] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+16:00:48,pid=23631,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:00:59,pid=23631,web.app，INFO:before_request() called.
+16:00:59,pid=23631,dashboard_rule_log，INFO:Query DB to get rule log.
+16:01:03,pid=23631,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:01:03,pid=23631,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:06:11,pid=23714,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:06:17,pid=23714,web.app，INFO:before_request() called.
+16:06:17,pid=23714,dashboard_rule_log，INFO:Query DB to get rule log.
+16:06:25,pid=23714,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:06:25,pid=23714,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:11:13,pid=23730,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:11:45,pid=23730,web.app，INFO:before_request() called.
+16:11:45,pid=23730,dashboard_rule_log，INFO:Query DB to get rule log.
+16:11:45,pid=23730,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:11:45,pid=23730,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:12:47,pid=23750,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:12:52,pid=23755,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:12:54,pid=23755,web.app，INFO:before_request() called.
+16:12:54,pid=23755,dashboard_rule_log，INFO:Query DB to get rule log.
+16:12:54,pid=23755,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:12:54,pid=23755,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:12:54,pid=23755,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 34, in getCheckItemCfg_view
+    print(json.dumps(details, cls=CustomEncoder))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+ValueError: Circular reference detected
+16:12:54,pid=23755,web.app，INFO:after_request() called.
+16:12:54,pid=23755,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 16:12:54] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+16:14:53,pid=23772,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:15:20,pid=23782,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:15:23,pid=23782,web.app，INFO:before_request() called.
+16:15:23,pid=23782,dashboard_rule_log，INFO:Query DB to get rule log.
+16:15:23,pid=23782,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:15:23,pid=23782,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:15:50,pid=23782,web.app，INFO:after_request() called.
+16:15:50,pid=23782,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 16:15:50] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+16:16:00,pid=23782,web.app，INFO:before_request() called.
+16:16:00,pid=23782,dashboard_rule_log，INFO:Query DB to get rule log.
+16:16:00,pid=23782,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:16:00,pid=23782,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:35:28,pid=23962,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:35:31,pid=23962,web.app，INFO:before_request() called.
+16:35:31,pid=23962,dashboard_rule_log，INFO:Query DB to get rule log.
+16:35:31,pid=23962,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:35:31,pid=23962,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:35:31,pid=23962,web.app，INFO:after_request() called.
+16:35:31,pid=23962,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 16:35:31] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+16:37:37,pid=23996,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:37:40,pid=23996,web.app，INFO:before_request() called.
+16:37:40,pid=23996,dashboard_rule_log，INFO:Query DB to get rule log.
+16:37:40,pid=23996,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:37:40,pid=23996,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:37:40,pid=23996,web.app，INFO:after_request() called.
+16:37:40,pid=23996,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 16:37:40] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+16:38:01,pid=24006,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:38:04,pid=24006,web.app，INFO:before_request() called.
+16:38:04,pid=24006,dashboard_rule_log，INFO:Query DB to get rule log.
+16:38:04,pid=24006,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:38:04,pid=24006,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:38:04,pid=24006,web.app，ERROR:Exception on /api/v1.0/details/cus_cnt1 [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/hushuai/PycharmProjects/git/data-quality/web/app/api.py", line 34, in getCheckItemCfg_view
+    print(json.dumps(details, cls=CustomEncoder))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+ValueError: Circular reference detected
+16:38:04,pid=24006,web.app，INFO:after_request() called.
+16:38:04,pid=24006,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 16:38:04] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 500 -
+16:42:54,pid=24057,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+16:42:57,pid=24057,web.app，INFO:before_request() called.
+16:42:57,pid=24057,dashboard_rule_log，INFO:Query DB to get rule log.
+16:42:57,pid=24057,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time >= %(task_time_2)s
+16:42:57,pid=24057,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time >= "2021110211"', 'exp': '1==1'}
+16:42:57,pid=24057,web.app，INFO:after_request() called.
+16:42:57,pid=24057,werkzeug，INFO:127.0.0.1 - - [25/Aug/2021 16:42:57] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+10:36:04,pid=1431,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+10:36:19,pid=1431,web.app，INFO:before_request() called.
+10:36:19,pid=1431,dashboard_rule_log，INFO:Query DB to get rule log.
+10:36:20,pid=1431,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time <= %(task_time_2)s
+10:36:20,pid=1431,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time <= "2021110211"', 'exp': '1==1'}
+10:36:20,pid=1431,web.app，INFO:after_request() called.
+10:36:20,pid=1431,werkzeug，INFO:127.0.0.1 - - [27/Aug/2021 10:36:20] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+10:36:20,pid=1431,web.app，INFO:before_request() called.
+10:36:20,pid=1431,web.app，INFO:after_request() called.
+10:36:20,pid=1431,werkzeug，INFO:127.0.0.1 - - [27/Aug/2021 10:36:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10:41:05,pid=1431,web.app，INFO:before_request() called.
+10:41:05,pid=1431,dashboard_rule_log，INFO:Query DB to get rule log.
+10:41:05,pid=1431,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time <= %(task_time_2)s
+10:41:05,pid=1431,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time <= "2021110211"', 'exp': '1==1'}
+10:41:05,pid=1431,web.app，INFO:after_request() called.
+10:41:05,pid=1431,werkzeug，INFO:127.0.0.1 - - [27/Aug/2021 10:41:05] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+10:41:55,pid=1431,web.app，INFO:before_request() called.
+10:41:55,pid=1431,dashboard_rule_log，INFO:Query DB to get rule log.
+10:41:55,pid=1431,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time <= %(task_time_2)s
+10:41:55,pid=1431,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time <= "2021110211"', 'exp': '1==1'}
+10:41:55,pid=1431,web.app，INFO:after_request() called.
+10:41:55,pid=1431,werkzeug，INFO:127.0.0.1 - - [27/Aug/2021 10:41:55] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+15:30:08,pid=13186,werkzeug，INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+15:31:33,pid=13186,web.app，INFO:before_request() called.
+15:31:33,pid=13186,dashboard_rule_log，INFO:Query DB to get rule log.
+15:31:33,pid=13186,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.table_name = %(table_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time <= %(task_time_2)s
+15:31:33,pid=13186,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': 'qualitis_task_result.table_name == "lineitem"', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time <= "2021110211"', 'exp': '1==1'}
+15:31:33,pid=13186,web.app，INFO:after_request() called.
+15:31:33,pid=13186,werkzeug，INFO:127.0.0.1 - - [27/Aug/2021 15:31:33] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&table_name=lineitem&col_name=&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
+15:32:52,pid=13186,web.app，INFO:before_request() called.
+15:32:52,pid=13186,dashboard_rule_log，INFO:Query DB to get rule log.
+15:32:52,pid=13186,data_query，INFO:query is: SELECT qualitis_task_result.db_type AS qualitis_task_result_db_type, qualitis_task_result.db_name AS qualitis_task_result_db_name, qualitis_task_result.table_name AS qualitis_task_result_table_name, qualitis_task_result.col_name AS qualitis_task_result_col_name, qualitis_task_result.task_time AS qualitis_task_result_task_time, qualitis_task_result.rule_name AS qualitis_task_result_rule_name, qualitis_task_result.details AS qualitis_task_result_details, qualitis_task_result.value AS qualitis_task_result_value 
+FROM qualitis_task_result 
+WHERE qualitis_task_result.db_type = %(db_type_1)s AND qualitis_task_result.db_name = %(db_name_1)s AND qualitis_task_result.rule_name = %(rule_name_1)s AND qualitis_task_result.task_time >= %(task_time_1)s AND qualitis_task_result.task_time <= %(task_time_2)s
+15:32:52,pid=13186,data_query，INFO:filter is: {'db_type': 'qualitis_task_result.db_type == "presto0820"', 'db_name': 'qualitis_task_result.db_name == "sf10820"', 'table_name': '1==1', 'col_name': '1==1', 'rule_name': 'qualitis_task_result.rule_name == "cus_cnt1"', 'task_time_begin': 'qualitis_task_result.task_time >= "2021110211"', 'task_time_end': 'qualitis_task_result.task_time <= "2021110211"', 'exp': '1==1'}
+15:32:52,pid=13186,web.app，INFO:after_request() called.
+15:32:52,pid=13186,werkzeug，INFO:127.0.0.1 - - [27/Aug/2021 15:32:52] "[35m[1mGET /api/v1.0/details/cus_cnt1?db_type=presto0820&db_name=sf10820&rule_name=cus_cnt1&task_time_begin=2021110211&task_time_end=2021110211 HTTP/1.1[0m" 201 -
