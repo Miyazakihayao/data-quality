@@ -18,7 +18,7 @@ import meta
 
 importlib.reload(sys)
 FILE_LOGGING_CONF = "conf" + os.sep + "logging.conf"
-# 配置环境
+# 配置环境 根据自己的环境配置
 os.environ['DATAQA_HOME'] = "/Users/hushuai/PycharmProjects/git/data-quality"
 os.environ['TASK_HOME'] = "/Users/hushuai/PycharmProjects/git/data-quality/tasks"
 logging.config.fileConfig(utils.get_home_path(FILE_LOGGING_CONF))
